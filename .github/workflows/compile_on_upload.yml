@@ -43,6 +43,7 @@ jobs:
       # Configure
       - name: Configure
         run: |
+          pwd
           ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
         
 
