@@ -37,13 +37,13 @@ jobs:
       # Try enter extracted directory
       - name: Enter newly created directory (BUILD_FOLDER)
         run: |
-          BUILD_FOLDER=$"$(\ls -1dt ./*/ | head -n 1)"
+          BUILD_FOLDER=$(basename $(ls -td ./*/ | head 1))
           cd ${BUILD_FOLDER}
           echo ${BUILD_FOLDER}
 
       # Configure
       - name: Configure
-        run: Iphreeqc_source/${BUILD_FOLDER}/configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
+        run: ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
         
 
 
