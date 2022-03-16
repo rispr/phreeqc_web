@@ -30,8 +30,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Display last uploaded source file 
-        run: cd Iphreeqc_source,
-            ls -1t | head -1
+        run: |
+          cd Iphreeqc_source/
+          ls -1t | head -1
+
         
 
 
