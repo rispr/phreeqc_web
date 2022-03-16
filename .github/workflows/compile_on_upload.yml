@@ -32,7 +32,7 @@ jobs:
       - name: Extract the last uploaded source file 
         run: |
           cd Iphreeqc_source/
-          tar -xf "(\ls -\dt **.gz | head -n 1)"
+          tar -xf "$(\ls -\dt **.gz | head -n 1)"
 
       # Try enter extracted directory
       - name: Enter newly created directory (BUILD_FOLDER)
