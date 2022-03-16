@@ -39,12 +39,14 @@ jobs:
         run: |
           BUILD_FOLDER=$"$(\ls -1dt ./*/ | head -n 1)"
           cd ${BUILD_FOLDER}
-          
+
+      # Working directory
+      - name: Working directory
+        run: pwd 
+
       # Configure
       - name: Configure
-        run: |
-          pwd
-          ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
+        run: ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
         
 
 
