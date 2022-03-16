@@ -28,18 +28,22 @@ jobs:
       - name: Display directory tree
         run: tree -d
 
-      # Runs a single command using the runners shell
-      - name: Display last uploaded source file 
+      # Extract the last uploaded source file
+      - name: Extract the last uploaded source file 
         run: |
           cd Iphreeqc_source/
-          ls -1t | head -1
-          tar -xf `ls -1t | head -1`
+          tar -xf "(\ls -\dt **.gz | head -n 1)"
 
       # Try enter extracted directory
-      - name: Enter newly created directory
+      - name: Enter newly created directory (BUILD_FOLDER)
         run: |
-          cd `ls -1t | head -1`/
-          ls
+          BUILD_FOLDER=$"$(\ls -1dt ./*/ | head -n 1)"
+          cd ${BUILD_FOLDER}
+          
+      # Configure
+      - name: Configure
+        run: |
+          ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
         
 
 
