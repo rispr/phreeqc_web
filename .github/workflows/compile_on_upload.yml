@@ -39,6 +39,7 @@ jobs:
         run: |
           BUILD_FOLDER=$"$(\ls -1dt ./*/ | head -n 1)"
           cd ${BUILD_FOLDER}
+          ls
 
       # Working directory
       - name: Working directory
