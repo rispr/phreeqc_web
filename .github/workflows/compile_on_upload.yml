@@ -37,7 +37,7 @@ jobs:
       # Try enter extracted directory
       - name: Enter newly created directory (BUILD_FOLDER)
         run: |
-          BUILD_FOLDER=$(basename $(ls -td ./*/ | head 1))
+          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
           cd ${BUILD_FOLDER}
           echo ${BUILD_FOLDER}
 
