@@ -32,8 +32,14 @@ jobs:
       - name: Display last uploaded source file 
         run: |
           cd Iphreeqc_source/
+          ls -1t | head -1
           tar -xf `ls -1t | head -1`
 
+      # Try enter extracted directory
+      - name: Enter newly created directory
+        run: |
+          cd `ls -1t | head -1`/
+          ls
         
 
 
