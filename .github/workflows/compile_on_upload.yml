@@ -35,14 +35,9 @@ jobs:
           BUILD_COMPRESSED=$(\ls -\dt **.gz | head -n 1)
           mkdir new
           tar -xf ${BUILD_COMPRESSED} --directory ./new
-          ls
           cd new
-          ls
-
-      # Try enter extracted directory
-      - name: Enter newly created directory (BUILD_FOLDER)
-        run: |
-          cd new
+          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
+          cd *
           ls
           
       # Configure
