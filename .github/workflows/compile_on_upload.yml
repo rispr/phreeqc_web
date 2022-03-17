@@ -44,7 +44,16 @@ jobs:
           ./configure --prefix=/home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_source/new/${BUILD_FOLDER}/compiled
           make check
           make install 
-          cd compiled 
-          ls
+          cd compiled/lib
+          cp libiphreeqc.so /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled/${BUILD_FOLDER}.so
+          cd /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled
+          git config --global user.name 'rispr'
+          git config --global user.email 'rispr@users.noreply.github.com'
+          git add my-dir
+          git commit -am "compiled ${BUILD_FOLDER}"
+          git push            
+          
+          
+          
           
           
