@@ -32,18 +32,25 @@ jobs:
       - name: Extract the last uploaded source file 
         run: |
           cd Iphreeqc_source/
-          tar -xf "$(\ls -\dt **.gz | head -n 1)"
+          BUILD_COMPRESSED=$(\ls -\dt **.gz | head -n 1)
+          mkdir new
+          tar -xf ${BUILD_COMPRESSED} --directory ./new
+          ls
+          cd new
+          ls
 
       # Try enter extracted directory
       - name: Enter newly created directory (BUILD_FOLDER)
         run: |
-          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
-          cd ${BUILD_FOLDER}
-          echo ${BUILD_FOLDER}
-
+          cd new
+          ls
+          
       # Configure
       - name: Configure
         run: ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
+          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
+          cd ${BUILD_FOLDER}
+          echo ${BUILD_FOLDER}
         
 
 
