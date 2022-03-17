@@ -36,9 +36,8 @@ jobs:
           mkdir new
           tar -xf ${BUILD_COMPRESSED} --directory ./new
           cd new
-          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
           cd *
-          ls
+          pwd
           
       # Configure
       - name: Configure
