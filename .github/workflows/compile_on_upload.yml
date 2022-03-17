@@ -36,15 +36,15 @@ jobs:
           mkdir new
           tar -xf ${BUILD_COMPRESSED} --directory ./new
           cd new
+          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
           cd *
           pwd
           
       # Configure
       - name: Configure
-        run: ./configure --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
-          BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
-          cd ${BUILD_FOLDER}
-          echo ${BUILD_FOLDER}
+        run: | 
+          "$(pwd)/some/path/configure" --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
+          ls
         
 
 
