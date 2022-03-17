@@ -39,8 +39,10 @@ jobs:
           BUILD_FOLDER=$(basename $(ls -td ./*/ | head -1))
           cd *
           pwd
-          "$(pwd)/some/path/configure" --prefix=Iphreeqc_compiled/${BUILD_FOLDER}      
           ls
+          ./configure    
+          ls
+          make check
           
 
         
