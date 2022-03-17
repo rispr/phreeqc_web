@@ -46,7 +46,7 @@ jobs:
           # Repository name to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
           #repository: # optional, default is 
           # Destination branch to push changes
-          #branch: # optional, default is master
+          branch: main # optional, default is master
           # Determines if force push is used
           #force: # optional
           # Determines if --tags is used
