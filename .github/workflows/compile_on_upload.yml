@@ -40,11 +40,11 @@ jobs:
           cd *
           pwd
           ls
-          ./configure    
-          ls
+          mkdir compiled
+          ./configure --prefix=./compiled   
           make check
+          make install 
+          cd compiled 
+          ls
           
-
-        
-
-
+          
