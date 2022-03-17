@@ -46,7 +46,7 @@ jobs:
           make install 
           cd compiled/lib
           BUILD_FILE=$(ls -1 | head -n 1)
-          cp BUILD_FILE /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled/${BUILD_FILE}
+          cp ${BUILD_FILE} /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled/${BUILD_FILE}
           cd /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled
           git config --global user.name 'rispr'
           git config --global user.email 'rispr@users.noreply.github.com'
