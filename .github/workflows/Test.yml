@@ -35,5 +35,6 @@ jobs:
         run: |
           git config --global user.name 'rispr'
           git config --global user.email 'rispr@users.noreply.github.com'
+          git add -A
           git commit -am "Automated report"
           git push    
