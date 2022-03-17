@@ -41,7 +41,7 @@ jobs:
           pwd
           ls
           mkdir compiled
-          ./configure --prefix=Iphreeqc_source/new/${BUILD_FOLDER}/compiled
+          ./configure --prefix=/home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_source/new/${BUILD_FOLDER}/compiled
           make check
           make install 
           cd compiled 
