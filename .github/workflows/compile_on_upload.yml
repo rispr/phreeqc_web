@@ -49,7 +49,7 @@ jobs:
           cd /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled
           git config --global user.name 'rispr'
           git config --global user.email 'rispr@users.noreply.github.com'
-          git add my-dir
+          git add /home/runner/work/phreeqc_web/phreeqc_web/Iphreeqc_compiled
           git commit -am "compiled ${BUILD_FOLDER}"
           git push            
           
