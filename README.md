@@ -4,7 +4,7 @@
 
 The purpose of this project is to make all the features of PHREEQC available online. 
 
-Phreeqc Web consists in a Python script which executes IPhreeqc and it is designed to run out-of-the-box in the cloud, with all the capabilities of the desktop graphical user interface.
+Phreeqc Web consists of a Python script which executes IPhreeqc and it is designed to run out-of-the-box in the cloud, with all the capabilities of the desktop graphical user interface.
 
 The implementation has been possibile through the Python package "phreeqpy" (https://www.phreeqpy.com/).
 
