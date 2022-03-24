@@ -1,4 +1,4 @@
-# Phreeqc Web
+![image](https://user-images.githubusercontent.com/40338105/159864615-d5fe6877-e630-4d55-8a03-1325ec925642.png)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1e-j7Yw3rTu8PTON-XK4d7FBYb8Z-0Yyd?usp=sharing)
 
@@ -27,4 +27,11 @@ Each example is independent and should provide a starting point to develop more 
 No, Phreeqc Web is ready to run. Actually, the source code of Iphreeqc is taken from the USGS website (https://www.usgs.gov/software/phreeqc-version-3) and it is automatically compiled using GitHub actions (available for this repo here: https://github.com/rispr/phreeqc_web/blob/main/.github/workflows/compile_on_upload.yml). Every time a new source code is uploaded in this repo it is automatically compiled and a Linux library is generated (https://github.com/rispr/phreeqc_web/tree/main/Iphreeqc_compiled) which is ready to be used by IPhreeqc, just by changing a link in Google Colab. 
 
 # Feedbacks? Suggestions? Requests of new features? 
+
 Then get in touch with Riccardo Sprocati (ricspr@protonmail.com).
+
+# References
+
+* Parkhurst, D. L., & Appelo, C. A. J. (2013). Description of input and examples for PHREEQC version 3-a computer program for speciation, batch-reaction, one-dimensional transport, and inverse geochemical calculations. US geological survey techniques and methods, 6(A43), 497.
+* Charlton, S. R., & Parkhurst, D. L. (2011). Modules based on the geochemical model PHREEQC for use in scripting and programming languages. Computers & Geosciences, 37(10), 1653-1663.
+* Müller, M., Parkhurst, D. L., & Charlton, S. R. (2011). Programming PHREEQC calculations with C++ and Python a comparative study. EXCHANGE, 1(40), 632-636.
