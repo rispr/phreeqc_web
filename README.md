@@ -2,9 +2,9 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1e-j7Yw3rTu8PTON-XK4d7FBYb8Z-0Yyd?usp=sharing)
 
-The purpose of this project is to make all the features of PHREEQC available online. 
+The purpose of this project is to make all the features of PHREEQC available online, in an interface that works right away. No need to download or install anything. 
 
-Phreeqc Web consists of a Python script which executes IPhreeqc and it is designed to run out-of-the-box in the cloud, with all the capabilities of the desktop graphical user interface.
+Phreeqc Web consists of a Python script which executes IPhreeqc and it is designed to run out-of-the-box in a jupiter notebook hosted on Google Colab, with all the capabilities of the desktop graphical user interface.
 
 The implementation has been possibile through the Python package "phreeqpy" (https://www.phreeqpy.com/).
 
@@ -20,11 +20,11 @@ The notebook contains 5 examples:
 4) Plot spatial profiles (uphill diffusion example)
 5) Simulate electrokinetic transport 
 
-Each example is independent and should provide a starting point to develop more complex applications. 
+Each example is independent and provides a starting point to develop more complex applications. 
 
 # Do I need to compile IPhreeqc to make it work? 
 
-No, Phreeqc Web is ready to run. Actually, the source code of Iphreeqc is taken from the USGS website (https://www.usgs.gov/software/phreeqc-version-3) and it is automatically compiled using GitHub actions (available for this repo here: https://github.com/rispr/phreeqc_web/blob/main/.github/workflows/compile_on_upload.yml). Every time a new source code is uploaded in this repo it is automatically compiled and a Linux library is generated (https://github.com/rispr/phreeqc_web/tree/main/Iphreeqc_compiled) which is ready to be used by IPhreeqc, just by changing a link in Google Colab. 
+No, Phreeqc Web is ready to run. Actually, the source code of Iphreeqc is taken from the USGS website (https://www.usgs.gov/software/phreeqc-version-3) and it is automatically compiled using GitHub actions (available for this repo here: https://github.com/rispr/phreeqc_web/blob/main/.github/workflows/compile_on_upload.yml). Every time a new source code is uploaded in this repository it is automatically compiled and a Linux library is generated (https://github.com/rispr/phreeqc_web/tree/main/Iphreeqc_compiled) which is ready to be used by IPhreeqc, just by changing a link in Google Colab. 
 
 # Feedback? Suggestions? Requests of new features? 
 
