@@ -14,11 +14,11 @@ Phreeqc Web is run in a Jupiter notebook which can be accessed in Google Colab a
 
 The notebook contains 5 examples:
 
-1) Visualize the outputs of a simple reaction
-2) Automatic replace inputs 
-3) Make a breakthrough plot (example 11 of Phreeqc's manual)
-4) Plot spatial profiles (uphill diffusion example)
-5) Simulate electrokinetic transport 
+1) Visualization of the outputs of a simple reaction
+2) Automatic replacement of inputs 
+3) Breakthrough plots (example 11 of Phreeqc's manual)
+4) Spatial profile plots (uphill diffusion example)
+5) Electrokinetic transport 
 
 Each example is independent and provides a starting point to develop more complex applications. 
 
