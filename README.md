@@ -26,10 +26,6 @@ Each example is independent and provides a starting point to develop more comple
 
 No, Phreeqc Web is ready to run. Actually, the source code of Iphreeqc is taken from the USGS website (https://www.usgs.gov/software/phreeqc-version-3) and it is automatically compiled using GitHub actions (available for this repo here: https://github.com/rispr/phreeqc_web/blob/main/.github/workflows/compile_on_upload.yml). Every time a new source code is uploaded in this repository it is automatically compiled and a Linux library is generated (https://github.com/rispr/phreeqc_web/tree/main/Iphreeqc_compiled) which is ready to be used by IPhreeqc, just by changing a link in Google Colab. 
 
-# Feedback? Suggestions? Requests of new features? 
-
-Then get in touch with Riccardo Sprocati (ricspr@protonmail.com).
-
 # References
 
 * Parkhurst, D. L., & Appelo, C. A. J. (2013). Description of input and examples for PHREEQC version 3-a computer program for speciation, batch-reaction, one-dimensional transport, and inverse geochemical calculations. US geological survey techniques and methods, 6(A43), 497.
