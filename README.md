@@ -2,9 +2,9 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1e-j7Yw3rTu8PTON-XK4d7FBYb8Z-0Yyd?usp=sharing)
 
-The purpose of this project is to make all the features of PHREEQC available online, in an interface that works right away. No need to download or install anything. 
+The objective of this project is to provide seamless online access to all PHREEQC features through an instantly operational interface. No downloads or installations are necessary.
 
-Phreeqc Web consists of a Python script which executes IPhreeqc and it is designed to run out-of-the-box in a jupiter notebook hosted on Google Colab, with all the capabilities of the desktop graphical user interface.
+Phreeqc Web is comprised of a Python script that leverages IPhreeqc, specifically designed for effortless execution within a Jupiter notebook hosted on Google Colab. This setup ensures that users can harness the full spectrum of capabilities offered by the desktop graphical user interface without any additional setup requirements.
 
 The implementation has been possibile through the Python package "phreeqpy" (https://www.phreeqpy.com/).
 
